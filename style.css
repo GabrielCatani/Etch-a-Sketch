@@ -4,7 +4,7 @@
     align-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 80vh;
+    height: 100vh;
 }
 
 .resizeCanvas {
@@ -19,7 +19,11 @@
 }
 
 .canvas {
-    width: 400px;
-    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
     align-self: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    background: blue;
 }
