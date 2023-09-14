@@ -1,0 +1,25 @@
+.stage {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.resizeCanvas {
+    align-self: center;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.canvas {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+}
