@@ -25,5 +25,5 @@
     justify-content: center;
     width: 600px;
     height: 600px;
-    background: blue;
+    border: solid black;
 }

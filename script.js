@@ -12,7 +12,6 @@ function generateDrawingArea(squarePerSide) {
         const new_div = document.createElement('div');
         new_div.style.width = canvas_w / squarePerSide + 'px';
         new_div.style.height = canvas_h / squarePerSide + 'px';
-        new_div.style.background = 'green';
 
         canvas.appendChild(new_div);
     }
@@ -28,4 +27,17 @@ function clearCanvas() {
     }
 }
 
-generateDrawingArea(10);
+
+function initPainter() {
+    const canvas = document.querySelector('.canvas');
+    const canvasTiles = Array.from(canvas.children);
+
+    canvasTiles.forEach((tile) => {
+        tile.addEventListener('mouseenter', () => {
+            tile.style.background = 'black'; 
+        });
+    });
+}
+
+generateDrawingArea(16);
+initPainter();
