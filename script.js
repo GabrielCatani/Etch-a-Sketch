@@ -39,5 +39,21 @@ function initPainter() {
     });
 }
 
-generateDrawingArea(16);
-initPainter();
+//Called by resizeCanvas button
+function setCanvasSize() {
+    const userInput = window.prompt("Type how many tiles by row you want? [1 - 80]");
+
+    const nbrTiles = parseInt(userInput);
+    if (nbrTiles < 0 || nbrTiles > 100) {
+        window.alert("Number of tiles can't be negative or more tha 100");
+    }
+
+    generateDrawingArea(nbrTiles);
+    initPainter();
+}
+function defaultCanvas() {
+    generateDrawingArea(10);
+    initPainter();
+}
+
+defaultCanvas();
